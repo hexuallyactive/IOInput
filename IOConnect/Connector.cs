@@ -26,7 +26,8 @@ namespace IOConnect
         {
             try
             {
-                client.Connect("ioconnect_" + Guid.NewGuid());
+                //client.Connect("ioconnect_" + Guid.NewGuid());
+                client.Connect("ioconnect_" + Guid.NewGuid(), "mouse", "mouse");
             }
             catch (Exception ex)
             {

@@ -40,7 +40,8 @@ namespace IOInput
             var quitItem = new NSMenuItem("Quit", (a, b) => Shutdown());
             menu.AddItem(quitItem);
             menuItem.Menu = menu;
-            connector = new Connector("pwc.downstreamlabs.com");
+            //connector = new Connector("pwc.downstreamlabs.com");
+            connector = new Connector("input.io");
             lastPosition = NSEvent.CurrentMouseLocation;
 
             notificationToken = NSNotificationCenter.DefaultCenter.AddObserver(NSApplication.DidChangeScreenParametersNotification, (obj) => {
